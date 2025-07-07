@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Form Validasi</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Pastikan styles.css ada -->
     <script>
         function validasi(form) {
             if (form.nama.value.trim() === "") {
@@ -37,7 +38,8 @@
                 return false;
             }
 
-            window.location.href = "Form_awal.html";
+            // ✅ Arahkan ke halaman lain jika valid
+            window.location.href = "Form_awal.html"; // pastikan file ini ada
             return false;
         }
     </script>
@@ -65,5 +67,6 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+
 </body>
 </html>
